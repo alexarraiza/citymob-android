@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Citymob</string>
+    <string name="mainmapafragment.menu.refresh">Recargar</string>
+</resources>

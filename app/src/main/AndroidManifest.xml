@@ -1,0 +1,48 @@
+<manifest package="com.bitbucket.hackersforgood.citymob"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        android:required="true"/>
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION"
+        android:required="true"/>
+
+    <application
+        android:name=".CitymobApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_maps_key"/>
+
+        <activity
+            android:name="com.bitbucket.hackersforgood.citymob.ui.activities.MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bitbucket.hackersforgood.citymob.ui.activities.AddMarkerDialogActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Dialog"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+        <activity
+            android:name="com.bitbucket.hackersforgood.citymob.ui.activities.RouteActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Route"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+
+    </application>
+
+</manifest>
